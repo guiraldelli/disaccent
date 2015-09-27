@@ -1,0 +1,24 @@
+Source URL: https://en.wikibooks.org/wiki/LaTeX/Special_Characters#Escaped_codes
+
+\`{o}  = ò 
+\'{o}  = ó 
+\^{o}  = ô 
+\"{o}  = ö 
+\H{o}  = ő 
+\~{o}  = õ 
+\c{c}  = ç 
+\k{a}  = ą 
+\l{}   = ł 
+\={o}  = ō 
+\b{o}  = o
+\.{o}  = ȯ 
+\d{u}  = ụ 
+\r{a}  = å 
+\u{o}  = ŏ 
+\v{s}  = š 
+\t{oo} = o͡o
+\o     = ø
+
+Special cases for i and j:
+\^\i   = î
+\"\i   = ï
