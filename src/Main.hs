@@ -15,10 +15,10 @@ main = TIO.interact process
 -- main = TIO.putStrLn $ process "Miglė Šaslykai Ąžuolas ḇ Erdős Möbius"
 
 process :: T.Text -> T.Text
-process = T.unlines . map toEscapedLatex . T.lines
+process = T.unlines . map escapeLatex . T.lines
 
-toEscapedLatex :: T.Text -> T.Text
-toEscapedLatex = T.concatMap escapeChar
+escapeLatex :: T.Text -> T.Text
+escapeLatex = T.concatMap escapeChar
 
 escapeChar :: Char -> T.Text
 escapeChar c =
