@@ -15,13 +15,13 @@ main = TIO.interact process
 -- main = TIO.putStrLn $ process "Miglė Šaslykai Ąžuolas ḇ Erdős Möbius"
 
 process :: T.Text -> T.Text
-process = T.unlines . map toLatex . T.lines
+process = T.unlines . map toEscapedLatex . T.lines
 
-toLatex :: T.Text -> T.Text
-toLatex = T.concatMap unicodeToLatex
+toEscapedLatex :: T.Text -> T.Text
+toEscapedLatex = T.concatMap escapeChar
 
-unicodeToLatex :: Char -> T.Text
-unicodeToLatex c =
+escapeChar :: Char -> T.Text
+escapeChar c =
     let t = T.singleton c
     in
         if C.blockCode c == C.BasicLatin
