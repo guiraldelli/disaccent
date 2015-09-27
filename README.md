@@ -1,7 +1,7 @@
 # `disaccent`
 `disaccent` is a tool for converting diacritical marks (AKA *accent marks*) from plain text to the respective [escaped LaTeX](https://en.wikibooks.org/wiki/LaTeX/Special_Characters#Escaped_codes) version.
 
-It is written in [Haskell(https://www.haskell.org/) and licensed under [BSD 2-clause](https://www.tldrlegal.com/l/freebsd).
+It is written in [Haskell](https://www.haskell.org/) and licensed under [BSD 2-clause](https://www.tldrlegal.com/l/freebsd).
 
 ## Usage
 `disaccent` is a standard command-line tool that process the [standard input stream (`STDIN`)](https://en.wikipedia.org/wiki/Standard_streams#Standard_input_.28stdin.29).
